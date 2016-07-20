@@ -1,0 +1,36 @@
+.secure {
+  @include flexbox();
+  @include flex-direction();
+  @include flex-wrap(wrap);
+  @include justify-content(space-between);
+  @include align-items(flex-start);
+  position: relative;
+  width: 771px;
+  margin: 0 auto 81px;
+  padding: 21px 0 0;
+
+  img {
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+.secure__text {
+  position: relative;
+  width: 81.3%;
+  padding-left: 30px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2c2c2c;
+
+  &:after {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 1px;
+    height: 76%;
+    background: #2c2c2c;
+    content: '';
+  }
+
+}
+

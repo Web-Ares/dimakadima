@@ -1,0 +1,130 @@
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  height: 43px;
+  min-width: 190px;
+  padding: 0 10px;
+  margin: 6px 0 0 225px;
+  border: 3px solid $btn-border-color;
+  border-radius: 43px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 14px;
+  background: $btn-back;
+  color: $btn-color;
+  @include main-font2();
+  -webkit-transition: background 200ms ease-in-out, border-color 200ms ease-in-out;
+  transition: background 200ms ease-in-out, border-color 200ms ease-in-out;
+
+  &:hover {
+    background: $btn-back-hover;
+  }
+  &:active {
+    background: $btn-back-active;
+  }
+
+  span {
+    @include flexbox();
+    @include flex-direction();
+    @include flex-wrap(wrap);
+    @include justify-content(center);
+    @include align-items(center);
+    position: relative;
+    height: 100%;
+
+    &:after {
+      display: inline-block;
+      vertical-align: top;
+      width: 10px;
+      height: 8px;
+      margin: 2px -10px 0 9px;
+      background: url("../img/btn-arrows.png") no-repeat center;
+      background-size: contain;
+      content: '';
+    }
+
+  }
+}
+.btn_2 {
+  border-color: $btn-2-border-color;
+  background: $btn-2-back;
+
+  &:hover {
+    border-color: $btn-2-border-color-hover;
+    background: $btn-2-back-hover;
+  }
+  &:active {
+    border-color: $btn-2-border-color-active;
+    background: $btn-2-back-active;
+  }
+
+}
+.btn_3 {
+  min-width: 140px;
+  margin: 17px auto 0;
+
+  span {
+
+    &:after {
+      display: none;
+    }
+
+  }
+
+}
+.btn2 {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: top;
+  height: 103px;
+  min-width: 321px;
+  padding: 28px 20px 41px;
+  margin: 0 0 49px;
+  border: 3px solid $btn-3-border-color;
+  border-radius: 103px;
+  text-align: center;
+  font-size: 28px;
+  line-height: 28px;
+  background: $btn-3-back;
+  @include main-font3();
+  color: $btn-3-color;
+  -webkit-transition: background 200ms ease-in-out, border-color 200ms ease-in-out;
+  transition: background 200ms ease-in-out, border-color 200ms ease-in-out;
+
+  &:hover {
+    background: $btn-3-back-hover;
+  }
+  &:active {
+    background: $btn-3-back-active;
+  }
+
+  span:first-child {
+    position: relative;
+
+    &:after {
+      display: inline-block;
+      vertical-align: top;
+      width: 15px;
+      height: 14px;
+      margin: 8px -19px 0 9px;
+      background: url("../img/btn-arrows2.png") no-repeat center;
+      background-size: contain;
+      content: '';
+    }
+
+  }
+
+  .btn2__text {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 6px 5px 2px;
+    background: $btn-3-span-back;
+    font-size: 15px;
+    line-height: 15px;
+    @include main-font1();
+  }
+
+}
